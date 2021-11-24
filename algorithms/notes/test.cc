@@ -24,7 +24,7 @@ vector<int> generate_next(string t) {
   vector<int> next(t.size());
   next[0] = -1;
   int i = 0, j = -1;
-  while (i < t.size()) {
+  while (i < t.size() - 1) {
     if (j == -1 || t[i] == t[j]) {
       i++; j++;
       next[i] = j;
