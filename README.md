@@ -19,7 +19,7 @@
 | [027. 移除元素](algorithms/cpp/027.remove_element/remove_element.cc) | `双指针` | [028. 实现strStr()](algorithms/cpp/028.implement_strstr/implement_strstr.cc)| `字符串` `双指针` <br> `字符串匹配(KMP)` |
 | [035. 搜索插入位置](algorithms/cpp/035.search_insert_position/search_insert_position.cc) | `数组` `二分查找` | [053. 最大子序和](algorithms/cpp/053.maximum_subarray/maximum_subarray.cc) | `数组` `分治` `动态规划` |
 | [058. 最后一个单词的长度](algorithms/cpp/058.length_of_last_word/length_of_last_word.cc) | `字符串` | [066. 加一](algorithms/cpp/066.plus_one/plus_one.cc) | `数组` `数学` |
-
+| [067. 二进制加法](algorithms/cpp/067.add_binary/add_binary.cc) | `字符串` `数学` |||
 
 ---
 
