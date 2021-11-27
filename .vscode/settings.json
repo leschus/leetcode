@@ -10,5 +10,6 @@
     "string_view": "cpp",
     "initializer_list": "cpp",
     "utility": "cpp"
-  }
+  },
+  "editor.fontFamily": "Hack"
 }

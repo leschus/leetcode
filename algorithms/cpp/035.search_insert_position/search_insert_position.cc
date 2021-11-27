@@ -7,6 +7,7 @@
 
 using namespace std;
 
+// AC
 class Solution_1 {
  public:
   /**
@@ -27,6 +28,7 @@ class Solution_1 {
 
 };
 
+// AC
 class Solution_2 {
  private:
   int binarySearch(const vector<int>& nums, int left, int right, int target) {
@@ -55,6 +57,7 @@ class Solution_2 {
 
 };
 
+// AC
 class Solution_3 {
  public:
   /**
