@@ -20,8 +20,8 @@
 | [035. 搜索插入位置](algorithms/cpp/035.search_insert_position/search_insert_position.cc) | `数组` `二分查找` | [053. 最大子序和](algorithms/cpp/053.maximum_subarray/maximum_subarray.cc) | `数组` `分治` `动态规划` |
 | [058. 最后一个单词的长度](algorithms/cpp/058.length_of_last_word/length_of_last_word.cc) | `字符串` | [066. 加一](algorithms/cpp/066.plus_one/plus_one.cc) | `数组` `数学` |
 | [067. 二进制加法](algorithms/cpp/067.add_binary/add_binary.cc) | `字符串` `数学` | [069. Sqrt(x)](algorithms/cpp/069.sqrtx/sqrtx.cc) | `数学` `二分查找` |
-| [070](algorithms/cpp/070.climbing_stairs/climbing_stairs.cc) | `记忆搜索` `动态规划` | [](algorithms/cpp/083.remove_duplicates_from_sorted_list/remove_duplicates_from_sorted_list.cc) | `链表` `双指针` |
-
+| [070. 爬楼梯](algorithms/cpp/070.climbing_stairs/climbing_stairs.cc) | `记忆搜索` `动态规划` | [083. 删除排序序列中的重复元素](algorithms/cpp/083.remove_duplicates_from_sorted_list/remove_duplicates_from_sorted_list.cc) | `链表` `双指针` |
+| [088. 合并两个有序数组](algorithms/cpp/088.merge_sorted_array/merge_sorted_array.cc) | `数组` `排序` `双指针` <br> `链表` |||
 ---
 
 ### 难度: 中等
