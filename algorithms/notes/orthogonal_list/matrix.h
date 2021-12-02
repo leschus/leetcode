@@ -2,44 +2,44 @@
 #define MATRIX_H_
 
 /**
- * ¾ØÕóµÄ³éÏóÊı¾İÀàĞÍ.
- * - Êı¾İ¶ÔÏó: <val, i, j>ÈıÔª×é, ±íÊ¾¾ØÕóµÚiĞĞµÚjÁĞµÄÔªËØÎªval, valµÄÀàĞÍÎª
+ * çŸ©é˜µçš„æŠ½è±¡æ•°æ®ç±»å‹.
+ * - æ•°æ®å¯¹è±¡: <val, i, j>ä¸‰å…ƒç»„, è¡¨ç¤ºçŸ©é˜µç¬¬iè¡Œç¬¬jåˆ—çš„å…ƒç´ ä¸ºval, valçš„ç±»å‹ä¸º
  * ElemType.
- * - »ù±¾²Ù×÷:
- *    - ´´½¨n*m¹æÄ£µÄ¿Õ¾ØÕó: CreateMatrix(Matrix &M, int n, int m)
- *    - ÉèÖÃµÚiĞĞµÚjÁĞµÄÔªËØÖµ: SetElem(Matrix &M, int n, int m, ElemType e)
- *    - »ñÈ¡µÚiĞĞµÚjÁĞµÄÔªËØÖµ: GetElem(Matrix M, int n, int m, ElemType &e)
- *    - »ñÈ¡¾ØÕóĞĞÊı: GetRows(Matrix M)
- *    - »ñÈ¡¾ØÕóÁĞÊı: GetColumns(Matrix M)
- *    - ¾ØÕóÏà¼Ó: MatrixAdd(Matrix M1, Matrix M2)
- *    - ¾ØÕóÏà³Ë: MatrixMult(Matrix M1, Matrix M2)
- *    - ´òÓ¡¾ØÕóÔªËØ: MatrixPrint(Matrix M)
+ * - åŸºæœ¬æ“ä½œ:
+ *    - åˆ›å»ºn*mè§„æ¨¡çš„ç©ºçŸ©é˜µ: CreateMatrix(Matrix &M, int n, int m)
+ *    - è®¾ç½®ç¬¬iè¡Œç¬¬jåˆ—çš„å…ƒç´ å€¼: SetElem(Matrix &M, int n, int m, ElemType e)
+ *    - è·å–ç¬¬iè¡Œç¬¬jåˆ—çš„å…ƒç´ å€¼: GetElem(Matrix M, int n, int m, ElemType &e)
+ *    - è·å–çŸ©é˜µè¡Œæ•°: GetRows(Matrix M)
+ *    - è·å–çŸ©é˜µåˆ—æ•°: GetColumns(Matrix M)
+ *    - çŸ©é˜µç›¸åŠ : MatrixAdd(Matrix M1, Matrix M2)
+ *    - çŸ©é˜µç›¸ä¹˜: MatrixMult(Matrix M1, Matrix M2)
+ *    - æ‰“å°çŸ©é˜µå…ƒç´ : MatrixPrint(Matrix M)
  */
 
 #include <iostream>
 #include <cassert>
 
-// Ê®×ÖÁ´±í½áµã½á¹¹
+// åå­—é“¾è¡¨ç»“ç‚¹ç»“æ„
 typedef struct OLNode {
   int i, j, val;
   OLNode *down, *right;
 }OLNode, *OLink;
 
-// Ê®×ÖÁ´±í½á¹¹
-// rhead´æ´¢ËùÓĞĞĞÁ´±íµÄ±íÍ·
-// chead´æ´¢ËùÓĞÁĞÁ´±íµÄ±íÍ·
-// n, m, t·Ö±ğ±íÊ¾¾ØÕóµÄĞĞÊı, ÁĞÊıºÍ·ÇÁãÔªËØ¸öÊı
+// åå­—é“¾è¡¨ç»“æ„
+// rheadå­˜å‚¨æ‰€æœ‰è¡Œé“¾è¡¨çš„è¡¨å¤´
+// cheadå­˜å‚¨æ‰€æœ‰åˆ—é“¾è¡¨çš„è¡¨å¤´
+// n, m, tåˆ†åˆ«è¡¨ç¤ºçŸ©é˜µçš„è¡Œæ•°, åˆ—æ•°å’Œéé›¶å…ƒç´ ä¸ªæ•°
 typedef struct {
   OLink *rhead, *chead;
   int n, m, t;
 }CrossLink;
 
 
-// »ùÓÚÊ®×ÖÁ´±íµÄ¾ØÕóÊµÏÖ
+// åŸºäºåå­—é“¾è¡¨çš„çŸ©é˜µå®ç°
 template <typename ElemType>
 class Matrix {
  public:
-  // Í¨¹ı½»»¥·½Ê½³õÊ¼»¯¾ØÕó
+  // é€šè¿‡äº¤äº’æ–¹å¼åˆå§‹åŒ–çŸ©é˜µ
   Matrix(ElemType default_value = 0);
   Matrix(int rows, int cols) = delete;
   Matrix(const Matrix &m) = delete;  // copy c'tor
@@ -55,14 +55,14 @@ class Matrix {
   Matrix & operator+(const Matrix &m) = delete;  // m1 + m2
   Matrix & operator*(const Matrix &m) = delete;  // m1 * m2
 
-  // ´òÓ¡¾ØÕóËùÓĞÔªËØ
+  // æ‰“å°çŸ©é˜µæ‰€æœ‰å…ƒç´ 
   void print() const;
 
 
  private:
   /* data */
   const ElemType kDefaultValue;
-  // Ê®×ÖÁ´±í½áµã
+  // åå­—é“¾è¡¨ç»“ç‚¹
   typedef struct OLNode {
     int i, j;
     ElemType val;
@@ -75,18 +75,18 @@ class Matrix {
       down = right = nullptr;
     }
   }OLNode, *OLink;
-  // ´æ´¢ËùÓĞÁĞ/ĞĞÁ´±íµÄÍ·½áµãÖ¸ÕëµÄÊı×é
+  // å­˜å‚¨æ‰€æœ‰åˆ—/è¡Œé“¾è¡¨çš„å¤´ç»“ç‚¹æŒ‡é’ˆçš„æ•°ç»„
   OLink *chead_, *rhead_;
-  // ¾ØÕóĞĞÊı/ÁĞÊı
+  // çŸ©é˜µè¡Œæ•°/åˆ—æ•°
   int rows_, cols_;
-  // ¾ØÕóÖĞµÄ·ÇÁãÔªËØ¸öÊı
+  // çŸ©é˜µä¸­çš„éé›¶å…ƒç´ ä¸ªæ•°
   int total_;
 };
 
 template <typename ElemType>
 Matrix<ElemType>::Matrix(ElemType default_value)
     : kDefaultValue(default_value) {
-  std::cout << "ÒÀ´ÎÊäÈë¾ØÕóĞĞÊı, ÁĞÊıºÍ·ÇÁãÔªËØ¸öÊı: ";
+  std::cout << "ä¾æ¬¡è¾“å…¥çŸ©é˜µè¡Œæ•°, åˆ—æ•°å’Œéé›¶å…ƒç´ ä¸ªæ•°: ";
   std::cin >> rows_ >> cols_ >> total_;
   rhead_ = new OLink[rows_];
   chead_ = new OLink[cols_];
@@ -99,31 +99,31 @@ Matrix<ElemType>::Matrix(ElemType default_value)
   int n = total_;
   int i, j, val;
   while (n--) {
-    std::cout << "...ÊäÈëÈıÔª×é(i, j, val): ";
+    std::cout << "...è¾“å…¥ä¸‰å…ƒç»„(i, j, val): ";
     std::cin >> i >> j >> val;
     OLNode *pnode = new OLNode(i, j, val);
-    // ½«ĞÂ½áµã²åÈëµ½¶ÔÓ¦ĞĞÁ´±íÖĞµÄÕıÈ·Î»ÖÃ: Á´±í½áµã°´ÕÕ½áµãÖµ´óĞ¡ÉıĞòÅÅÁĞ
-    // ĞÂ½áµã²åÈëµ½¶ÔÓ¦ĞĞµÄĞĞÊ×
+    // å°†æ–°ç»“ç‚¹æ’å…¥åˆ°å¯¹åº”è¡Œé“¾è¡¨ä¸­çš„æ­£ç¡®ä½ç½®: é“¾è¡¨ç»“ç‚¹æŒ‰ç…§ç»“ç‚¹å€¼å¤§å°å‡åºæ’åˆ—
+    // æ–°ç»“ç‚¹æ’å…¥åˆ°å¯¹åº”è¡Œçš„è¡Œé¦–
     if (rhead_[i] == nullptr || rhead_[i]->j > j) {
       pnode->right = rhead_[i];
       rhead_[i] = pnode;
-    } else { // ²åÈëÎ»ÖÃ²»ÔÚĞĞÊ×
+    } else { // æ’å…¥ä½ç½®ä¸åœ¨è¡Œé¦–
       OLNode *p = rhead_[i];
-      // ½«pÒÆ¶¯µ½´ı²åÈëÎ»ÖÃ
+      // å°†pç§»åŠ¨åˆ°å¾…æ’å…¥ä½ç½®
       while (p->right && p->right->j < j) {
         p = p->right;
       }
       pnode->right = p->right;
       p->right = pnode;
     }
-    // ½«ĞÂ½áµã²åÈëµ½¶ÔÓ¦ÁĞÁ´±íµÄÕıÈ·Î»ÖÃ: Á´±í½áµã°´ÕÕ½áµãÖµ´óĞ¡ÉıĞòÅÅÁĞ
-    // ĞÂ½áµã²åÈëµ½¶ÔÓ¦ÁĞµÄÁĞÊ×
+    // å°†æ–°ç»“ç‚¹æ’å…¥åˆ°å¯¹åº”åˆ—é“¾è¡¨çš„æ­£ç¡®ä½ç½®: é“¾è¡¨ç»“ç‚¹æŒ‰ç…§ç»“ç‚¹å€¼å¤§å°å‡åºæ’åˆ—
+    // æ–°ç»“ç‚¹æ’å…¥åˆ°å¯¹åº”åˆ—çš„åˆ—é¦–
     if (chead_[j] == nullptr || chead_[j]->i > i) {
       pnode->down = chead_[j];
       chead_[j] = pnode;
-    } else { // ²åÈëÎ»ÖÃ²»ÔÙÁĞÊ×
+    } else { // æ’å…¥ä½ç½®ä¸å†åˆ—é¦–
       OLNode *p = chead_[j];
-      // ½«pÒÆ¶¯µ½´ı²åÈëÎ»ÖÃ
+      // å°†pç§»åŠ¨åˆ°å¾…æ’å…¥ä½ç½®
       while (p->down && p->down->i > i) {
         p = p->down;
       }
