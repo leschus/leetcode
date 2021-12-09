@@ -25,6 +25,7 @@
 | [100. 相同的树](algorithms/cpp/100.same_tree/same_tree.cc) | `树` `二叉树` `深度优先搜索` `广度优先搜索` | [101. 对称二叉树](algorithms/cpp/101.symmetric_tree/symmetric_tree.cc) | `树` `二叉树` `递归` `深度优先搜索` <br> `队列` `广度优先搜索` |
 | [104. 二叉树的最大深度](algorithms/cpp/104.maximum_depth_of_binary_tree/maximum_depth_of_binary_tree.cc) | `树` `二叉树` `深度优先搜索` `递归` <br> `广度优先搜索` | [108. 将有序数组转换成二叉搜索树](algorithms/cpp/108.convert_sorted_array_to_binary_search_tree/convert_sorted_array_to_binary_search_tree.cc) | `树` `二叉树` `分治` `递归` `深度优先搜索` |
 | [110. 平衡二叉树](algorithms/cpp/110.balanced_binary_tree/balanced_binary_tree.cc) | `树` `二叉树` `深度优先搜索` | [111. 二叉树的最小深度](algorithms/cpp/111.minimum_depth_of_binary_tree/minimum_depth_of_binary_tree.cc) | `树` `二叉树` `深度优先搜索` `递归` <br> `广度优先搜索` |
+| [112. 路径总和](algorithms/cpp/112.path_sum/path_sum.cc) | `树` `二叉树` `深度优先搜索是` <br> `广度优先搜索` | [118. 杨辉三角](algorithms/cpp/118.pascals_triangle/pascals_triangle.cc) | `数学` |
 ---
 
 ### 难度: 中等
