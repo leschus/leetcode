@@ -27,6 +27,7 @@
 | [110. 平衡二叉树](algorithms/cpp/110.balanced_binary_tree/balanced_binary_tree.cc) | `树` `二叉树` `深度优先搜索` | [111. 二叉树的最小深度](algorithms/cpp/111.minimum_depth_of_binary_tree/minimum_depth_of_binary_tree.cc) | `树` `二叉树` `深度优先搜索` `递归` <br> `广度优先搜索` |
 | [112. 路径总和](algorithms/cpp/112.path_sum/path_sum.cc) | `树` `二叉树` `深度优先搜索是` <br> `广度优先搜索` | [118. 杨辉三角](algorithms/cpp/118.pascals_triangle/pascals_triangle.cc) | `数学` |
 | [119. 杨辉三角 II](algorithms/cpp/119.pascals_triangle_ii/pascals_triangle_ii.cc) | `数学` `数组` `动态规划` | [121. 买卖股票的最佳时机](algorithms/cpp/121.best_time_to_buy_and_sell_stock/best_time_to_buy_and_sell_stock.cc) | `数组` `动态规划` |
+| [125. 验证回文串](algorithms/cpp/125.valid_palindrome/valid_palindrome.cc) | `字符串` `双指针` |||
 ---
 
 ### 难度: 中等
