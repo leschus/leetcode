@@ -29,6 +29,7 @@
 | [119. 杨辉三角 II](algorithms/cpp/119.pascals_triangle_ii/pascals_triangle_ii.cc) | `数学` `数组` `动态规划` | [121. 买卖股票的最佳时机](algorithms/cpp/121.best_time_to_buy_and_sell_stock/best_time_to_buy_and_sell_stock.cc) | `数组` `动态规划` |
 | [125. 验证回文串](algorithms/cpp/125.valid_palindrome/valid_palindrome.cc) | `字符串` `双指针` | [136. 只出现一次的数](algorithms/cpp/136.single_number/single_number.cc) | `数组` `位运算` |
 | [141. 环形链表](algorithms/cpp/141.linked_list_cycle/linked_list_cycle.cc) | `链表` `哈希表` <br> `双指针` | [144. 二叉树的前序遍历](algorithms/cpp/144.binary_tree_preorder_traversal/binary_tree_preorder_traversal.cc) | `树` `二叉树` `深度优先搜索` `广度优先搜索` |
+| [145. 二叉树的后序遍历](algorithms/cpp/145.binary_tree_postorder_traversal/binary_tree_postorder_traversal.cc) | `树` `二叉树` `深度优先搜索` `广度优先搜索` | [160. 相交链表](algorithms/cpp/160.intersection_of_two_linked_list/intersection_of_two_linked_list.cc) | `链表` `栈` <br> `双指针` |
 ---
 
 ### 难度: 中等
