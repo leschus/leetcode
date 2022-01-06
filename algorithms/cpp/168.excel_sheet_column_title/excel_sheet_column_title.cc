@@ -14,7 +14,7 @@ class Solution_1 {
   *
   * @时间复杂度 O(logn), 底数为26
   */
-  string converToTitle(int columnNumber) {
+  string convertToTitle(int columnNumber) {
     char cs[10];
     int i = 0;
     while (columnNumber) {
@@ -35,9 +35,9 @@ class Solution_1 {
 int main() {
   int n1 = 1, n2 = 28, n3 = 701, n4 = 2147483647;
   Solution_1 sol;
-  cout << sol.converToTitle(n1) << endl;
-  cout << sol.converToTitle(n2) << endl;
-  cout << sol.converToTitle(n3) << endl;
-  cout << sol.converToTitle(n4) << endl;
+  cout << sol.convertToTitle(n1) << endl;
+  cout << sol.convertToTitle(n2) << endl;
+  cout << sol.convertToTitle(n3) << endl;
+  cout << sol.convertToTitle(n4) << endl;
 
 }
