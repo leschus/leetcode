@@ -32,7 +32,7 @@
 | [145. 二叉树的后序遍历](algorithms/cpp/145.binary_tree_postorder_traversal/binary_tree_postorder_traversal.cc) | `树` `二叉树` `深度优先搜索` `广度优先搜索` | [160. 相交链表](algorithms/cpp/160.intersection_of_two_linked_list/intersection_of_two_linked_list.cc) | `链表` `栈` <br> `双指针` |
 | [167. 两数之和 II - 输入有序数组](algorithms/cpp/167.two_sum_ii_input_array_is_sorted/two_sum_ii_input_array_is_sorted.cc) | `数组` `双指针` `二分查找` | [168. Excel表列名称](algorithms/cpp/168.excel_sheet_column_title/excel_sheet_column_title.cc) | `数学` `字符串` |
 | [169. 多数元素](algorithms/cpp/169.majority_element/majority_element.cc) | `哈希表` | [171. Excel表列序号](algorithms/cpp/171.excel_sheet_column_number/excel_sheet_column_number.cc) | `数学` `字符串` |
-| [190. 颠倒二进制位](algorithms/cpp/190.reverse_bits/reverse_bits.cc) | `位运算` `分治` |||
+| [190. 颠倒二进制位](algorithms/cpp/190.reverse_bits/reverse_bits.cc) | `位运算` `分治` | [191. 位1的个数](algorithms/cpp/191.number_of_1_bits/number_of_1_bits.cc) | `位运算` |
 ---
 
 ### 难度: 中等
